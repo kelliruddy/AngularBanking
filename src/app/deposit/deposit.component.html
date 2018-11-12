@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<script>
+  var app = angular.module("bankingApp",[]);
+  app.controller("myCtrl",['$scope', function($scope) {
+    depositMoney = function(){
+      $scope.depositErrorMessage = "";
+      $scope.totalBalance = 0;
+      if($scope.depositAmount > 0){
+        $scope.totalBalance = $scope.totalBalance + $scope.depositAmount;
+      }else{
+        $scope.depositErrorMessage = "Must be a valid amount to deposit.";
+      }
+    }
+}]);
+</script>
+
+<div style="text-align:center">
+  <div ng-app="bankingApp" ng-controller="myCtrl">
+
+    How much would you like to deposit:<br><br>$<input type ='text' [(ngModel)]='depositAmount'>
+    <br><br>
+    {{ depositAmount }}
+    <button ng-click ="depositMoney()">Deposit Now.</button>   
+    <p>{{ depositErrorMessage }}</p>
+    <br>
+    <h3>Your new balance is: {{ totalBalance }}</h3>
+  </div>
+</div>
+
+</body>
+</html>
+
+
