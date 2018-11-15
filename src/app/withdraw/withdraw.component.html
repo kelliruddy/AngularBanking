@@ -6,10 +6,10 @@
 <div style="text-align:center">
   <div ng-app="bankingApp" ng-controller="myCtrl">
 
-    How much would you like to deposit:<br><br>$<input type ="number" [(ngModel)]='depositAmount'>
+    How much would you like to withdraw:<br><br>$<input type ="number" [(ngModel)]='withdrawAmount'>
     <br><br>
-    <button (click) ="depositMoney()">Deposit Now.</button>   
-    <p>{{ depositErrorMessage }}</p>
+    <button (click) ="withdrawMoney()">Withdraw Now.</button>   
+    <p>{{ withdrawErrorMessage }}</p>
     <br>
     <h3>Your balance is: ${{ totalBalance }}</h3>
   </div>
@@ -17,5 +17,3 @@
 
 </body>
 </html>
-
-
