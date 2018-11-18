@@ -5,6 +5,8 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { DepositComponent } from './deposit/deposit.component';
 import { WithdrawComponent } from './withdraw/withdraw.component';
+import { LoggedInHomeComponent } from './logged-in-home/logged-in-home.component';
+
 
 const routes: Routes = [
   {
@@ -26,6 +28,10 @@ const routes: Routes = [
   {
     path: 'withdraw',
     component: WithdrawComponent
+  },
+  {
+    path: 'logged-in-home',
+    component: LoggedInHomeComponent
   },
 ];
 

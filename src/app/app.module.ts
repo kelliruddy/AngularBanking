@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { DepositComponent } from './deposit/deposit.component';
 import { WithdrawComponent } from './withdraw/withdraw.component';
+import { LoggedInHomeComponent } from './logged-in-home/logged-in-home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { WithdrawComponent } from './withdraw/withdraw.component';
     LoginComponent,
     HomeComponent,
     DepositComponent,
-    WithdrawComponent
+    WithdrawComponent,
+    LoggedInHomeComponent
   ],
   imports: [
     BrowserModule,

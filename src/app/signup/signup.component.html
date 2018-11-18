@@ -1,15 +1,27 @@
-<div style="text-align:center">
-<h2>Create an Account Here!</h2>
-<br>
-<form>
-  Email:
-  <br>
-  <input type="text" email="email"><br>
-  <br>
-  Password:
-  <br>
-  <input type ="text"password="password"><br>
-  <br>
-  <input type = "submit" value="Submit">
-</form>
-</div>
+<!DOCTYPE html>
+  <html>
+  
+  <body>
+  
+  <div style="text-align:center">
+    <div ng-app="bankingApp" ng-controller="myCtrl">
+  
+      First Name: <input type ="text" [(ngModel)]='firstName'>
+      <br><br>
+      Last Name: <input type ="text" [(ngModel)]='lastName'>
+      <br><br>
+      Email: <input type ="text" [(ngModel)]='email'>
+      <br><br>
+      Password: <input type ="text" [(ngModel)]='password'>
+      <br><br>
+      <button (click) ="signup()">Signup Now.</button>  
+      <br><br>
+      <h2>{{ signupMessage }}</h2>
+
+      <br>
+
+    </div>
+  </div>
+  
+  </body>
+  </html>
