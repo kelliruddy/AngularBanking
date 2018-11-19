@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
-This is a basic banking application that will allow a user to signup,deposit and withdraw money from their account.
+This is a basic banking application that will allow a user to signup, login, deposit and withdraw money from their account.
 
 ## Development server
 
